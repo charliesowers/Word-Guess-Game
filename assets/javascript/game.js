@@ -23,7 +23,7 @@ var wordDispText;
 var wordGuess;
 var guessSoFarText;
 
-document.body.style.backgroundImage = "url(" + './assets/images/world_map_7.png' + ")";
+document.body.style.backgroundImage = "url('./assets/images/world_map_7.png')";
 
 
 document.onkeyup = function(event) {
@@ -36,7 +36,7 @@ document.onkeyup = function(event) {
             wordGuess = '_'.repeat(word.length);
             guessSoFarText = '';
             guessesLeft = 7;
-            document.body.style.backgroundImage = "url(./assets/images/world_map_7.png')";
+            document.body.style.backgroundImage = "url('./assets/images/world_map_7.png')";
 
             youChose.textContent = 'You chose: ';
             guesses.textContent = 'Guesses left: '+ guessesLeft;
